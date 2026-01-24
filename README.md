@@ -1,16 +1,18 @@
 <h1 align="center">Hi 👋, I'm Janith Akalanka</h1>
-<h3 align="center">Software Engineering Graduate | BEng (Hons) SE Top-Up @ London Met</h3>
+<h3 align="center">
+Software Engineering Graduate | BEng (Hons) Software Engineering (Top-Up) @ London Met
+</h3>
 
 <p align="center">
-🎓 HND in Software Engineering (Pearson BTEC) <br/>
-📘 BEng (Hons) Software Engineering – Top-Up <br/>
+🎓 HND in Software Engineering (Pearson BTEC)<br/>
+📘 BEng (Hons) Software Engineering – Top-Up<br/>
 🏫 London Metropolitan University
 </p>
 
 ---
 
-## 👨‍💻 Professional Summary
-A dedicated software engineering graduate with a strong foundation in full-stack development, system analysis, and secure application design. Experienced in building database-driven systems and applying software engineering best practices to develop scalable, reliable, and user-centric applications.
+## 👨‍💻 Professional Profile
+Software engineering graduate with a Pearson BTEC HND and currently completing a BEng (Hons) Software Engineering Top-Up at London Metropolitan University. Experienced in full-stack web development, database-driven systems, and secure application design. Strong interest in building scalable, reliable solutions aligned with UK industry best practices.
 
 ---
 
@@ -37,6 +39,35 @@ Git • GitHub • VS Code • XAMPP • Figma • Canva
 
 ---
 
+## 🧩 Featured Projects
+
+### 🏫 AI-Powered Smart School Attendance System
+- Face recognition–based attendance system using computer vision  
+- Secure student data handling with analytics dashboard  
+- **Technologies:** PHP, Python, MySQL, OpenCV  
+
+🔗 *Academic & Final Year Project*
+
+---
+
+### 🛒 ISDN Online Sales & Delivery Management System
+- Full-stack web system with admin and customer dashboards  
+- Order management, invoice generation, and role-based access control  
+- **Technologies:** PHP, MySQL, Bootstrap  
+
+🔗 *Web Application Project*
+
+---
+
+### 🌱 AI for Sustainability – Solar Energy Forecasting (Sri Lanka)
+- AI-based time-series forecasting for renewable energy optimisation  
+- Focused on sustainability and data-driven decision making  
+- **Technologies:** Python, Prophet, Pandas  
+
+🔗 *Computing Research Project*
+
+---
+
 ## 🎯 Current Focus
 - Enhancing full-stack software engineering capabilities  
 - Developing production-ready, real-world applications  
@@ -55,7 +86,7 @@ Git • GitHub • VS Code • XAMPP • Figma • Canva
 
 ## 🏆 Achievements
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Janith2002&theme=matrix&margin-w=15"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=Janith2002&theme=flat&no-frame=true&margin-w=15"/>
 </p>
 
 ---
