@@ -25,8 +25,8 @@ const janith = {
   name     : "V.W. Janith Akalanka Jayasooriya",
   location : "Sri Lanka",
   education: [
-    "HND Software Engineering — Pearson BTEC (ESOFT Metro Campus)",
-    "BEng (Hons) Software Engineering Top-Up — London Metropolitan University"
+    "HND Software Engineering - Pearson BTEC (ESOFT Metro Campus)",
+    "BEng (Hons) Software Engineering Top-Up - London Metropolitan University"
   ],
   roles    : ["Full-Stack Developer", "AI Systems Builder", "UI/UX Designer"],
   stack    : ["PHP", "C#", "Python", "TypeScript", "Next.js", "ASP.NET"],
@@ -90,9 +90,9 @@ const janith = {
 |:--------|:-----------|:------|:------:|
 | [AI Smart Attendance](https://github.com/Janith2002/AI-Powered-Smart-School-Attendance-System) | Face recognition school attendance with analytics | PHP · Python · OpenCV · MySQL | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [ISDN Sales System](https://github.com/Janith2002/isdn_sales_system) | E-commerce & delivery management with driver tracking | PHP · MySQL · Bootstrap | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
-| [UniManage](https://github.com/Janith2002/Unimanage) | University management — students, courses & messaging | C# · ASP.NET · SQL Server | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [UniManage](https://github.com/Janith2002/Unimanage) | University management - students, courses & messaging | C# · ASP.NET · SQL Server | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Qrave Restaurant](https://github.com/Janith2002/qrave-restaurant) | QR-based table ordering with kitchen display | Next.js · TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
-| [Shopora POS](https://github.com/Janith2002/Shopora-POS-project-plan) | Full point of sale — billing, inventory & shifts | Next.js · TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [Shopora POS](https://github.com/Janith2002/Shopora-POS-project-plan) | Full point of sale - billing, inventory & shifts | Next.js · TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [CVora](https://github.com/Janith2002/CVora) | CV/Resume management platform with admin panel | Next.js · TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Xera Studio](https://github.com/Janith2002/Xera-Studio) | Studio platform with Firebase & WhatsApp integration | Next.js · Firebase | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Smart Spend America](https://github.com/Janith2002/smartspendamerica) | Automated AI-driven YouTube finance channel | Python · Groq · FFmpeg | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
