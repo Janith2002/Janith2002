@@ -170,6 +170,8 @@ const janith = {
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-Janith2002-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Janith2002)
+&nbsp;
+[![Email](https://img.shields.io/badge/Email-jakalanka546%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jakalanka546@gmail.com)
 
 <br/>
 <sub>Open to collaboration, open-source contributions, and building impactful software solutions.</sub>
