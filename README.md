@@ -49,32 +49,46 @@ const janith = {
 <tr>
 <td align="center" width="140"><b>Languages</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=php,cs,py,ts,js&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=php,cs,py,ts,js,html,css&theme=dark"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>Frameworks</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=nextjs,dotnet,bootstrap,tailwind,flask&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=nextjs,dotnet,bootstrap,tailwind,flask,fastapi,opencv&theme=dark"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>Databases</b></td>
 <td>
 <img src="https://skillicons.dev/icons?i=mysql,sqlite,firebase&theme=dark"/>
-<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/Entity%20Framework-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>Tools</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=git,github,docker,vscode,figma,xd&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd&theme=dark"/>
+&nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>Deploy</b></td>
 <td>
 <img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,render&theme=dark"/>
+&nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=flat-square&logo=caddy&logoColor=white"/>
+</td>
+</tr>
+<tr>
+<td align="center"><b>APIs & AI</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=telegram&theme=dark"/>
+&nbsp;<img src="https://img.shields.io/badge/Groq%20AI-F55036?style=flat-square&logo=groq&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/YouTube%20API-FF0000?style=flat-square&logo=youtube&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/Pexels%20API-05A081?style=flat-square&logo=pexels&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/WhatsApp%20API-25D366?style=flat-square&logo=whatsapp&logoColor=white"/>
 </td>
 </tr>
 </table>
