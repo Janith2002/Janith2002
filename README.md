@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Janith%20Akalanka&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=34&desc=Software%20Engineer%20%7C%20Full-Stack%20Developer%20%7C%20AI%20Enthusiast&descAlignY=54&descSize=17" width="100%"/>
 
 <a href="https://github.com/Janith2002">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=680&lines=BEng+(Hons)+Software+Engineering+%40+London+Met;Full-Stack+Developer+%7C+PHP+%7C+C%23+%7C+Next.js;AI+%26+Computer+Vision+Builder;Portfolio%3A+janith-akalanka.netlify.app" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=680&lines=BEng+(Hons)+Software+Engineering+%40+London+Met;Full-Stack+Developer+%7C+PHP+%7C+C%23+%7C+Python+%7C+TypeScript;Building+AI+%26+Computer+Vision+Systems;Shipping+20%2B+Projects+Across+Web+%26+Automation;Portfolio%3A+janith-akalanka.netlify.app" alt="Typing SVG" />
 </a>
 
 <br/>
