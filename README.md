@@ -3,7 +3,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=200&section=header&text=Janith%20Akalanka&fontSize=48&fontColor=fff&animation=twinkling&fontAlignY=34&desc=Software%20Engineer%20%7C%20Full-Stack%20Developer%20%7C%20AI%20Enthusiast&descAlignY=54&descSize=17" width="100%"/>
 
 <a href="https://github.com/Janith2002">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=680&lines=BEng+(Hons)+Software+Engineering+%40+London+Met;Full-Stack+Developer+%7C+PHP+%7C+C%23+%7C+Next.js;AI+%26+Computer+Vision+Builder;20%2B+Projects+Shipped+%7C+Always+Learning" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=22&pause=1000&color=00D9FF&center=true&vCenter=true&width=680&lines=BEng+(Hons)+Software+Engineering+%40+London+Met;Full-Stack+Developer+%7C+PHP+%7C+C%23+%7C+Next.js;AI+%26+Computer+Vision+Builder;Portfolio%3A+janith-akalanka.netlify.app" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -40,6 +40,7 @@ const janith = {
   design    : ["Figma", "Adobe XD"],
   currently : "Building production-ready software & expanding into AI/Cybersecurity",
   openTo    : ["Collaboration", "Open Source", "Freelance", "Academic Projects"],
+  portfolio : "https://janith-akalanka.netlify.app",
   contact   : "jakalanka546@gmail.com"
 };
 ```
@@ -264,6 +265,8 @@ const janith = {
 
 <div align="center">
 
+[![Portfolio](https://img.shields.io/badge/Portfolio-janith--akalanka.netlify.app-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://janith-akalanka.netlify.app)
+&nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-Janith2002-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Janith2002)
 &nbsp;
 [![Gmail](https://img.shields.io/badge/Gmail-jakalanka546%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jakalanka546@gmail.com)
