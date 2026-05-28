@@ -41,7 +41,7 @@ const janith = {
   currently : "Building production-ready software & expanding into AI/Cybersecurity",
   openTo    : ["Collaboration", "Open Source", "Freelance", "Academic Projects"],
   portfolio : "https://janith-akalanka.netlify.app",
-  contact   : "jakalanka546@gmail.com"
+  contact   : "jakalanka47@gmail.com"
 };
 ```
 
@@ -269,7 +269,7 @@ const janith = {
 &nbsp;
 [![GitHub](https://img.shields.io/badge/GitHub-Janith2002-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Janith2002)
 &nbsp;
-[![Gmail](https://img.shields.io/badge/Gmail-jakalanka546%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jakalanka546@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-jakalanka47%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:jakalanka47@gmail.com)
 
 <br/>
 <sub>Open to collaboration, freelance work, open-source contributions, and building impactful software.</sub>
