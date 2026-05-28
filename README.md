@@ -106,17 +106,23 @@ const janith = {
 
 <div align="center">
 
-<img height="170em" src="https://github-readme-stats.vercel.app/api?username=Janith2002&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00D9FF&icon_color=00D9FF&text_color=ffffff&rank_icon=github&cache_seconds=86400&v=2"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Janith2002&theme=tokyonight" width="95%" alt="Profile Summary"/>
+
+<br/>
+
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Janith2002&theme=tokyonight" height="160em"/>
 &nbsp;
-<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Janith2002&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00D9FF&text_color=ffffff&cache_seconds=86400&v=2"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Janith2002&theme=tokyonight" height="160em"/>
+&nbsp;
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Janith2002&theme=tokyonight" height="160em"/>
 
 <br/><br/>
 
-<img src="https://github-readme-streak-stats.demolab.com/?user=Janith2002&theme=tokyonight&hide_border=true&background=0d1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&v=2" alt="GitHub Streak"/>
+<img src="https://github-readme-streak-stats.demolab.com/?user=Janith2002&theme=tokyonight&hide_border=true&background=0d1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF" alt="GitHub Streak"/>
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Janith2002&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00D9FF&line=00D9FF&point=ffffff&area=true&v=2" width="95%" alt="Contribution Graph"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Janith2002&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00D9FF&line=00D9FF&point=ffffff&area=true" width="95%" alt="Contribution Graph"/>
 
 </div>
 
