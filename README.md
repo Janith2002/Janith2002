@@ -61,34 +61,31 @@ const janith = {
 <tr>
 <td align="center"><b>Databases</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=mysql,sqlite,firebase&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/Entity%20Framework-512BD4?style=flat-square&logo=dotnet&logoColor=white"/>
+<img src="https://skillicons.dev/icons?i=mysql,sqlite,firebase,mssql&theme=dark"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>Tools</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=flat-square&logo=ffmpeg&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=flat-square&logo=n8n&logoColor=white"/>
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd,ffmpeg&theme=dark"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>Deploy</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,render&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=flat-square&logo=caddy&logoColor=white"/>
+<img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,cloudflare&theme=dark"/>
+&nbsp;<img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/>
+&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>APIs & AI</b></td>
 <td>
 <img src="https://skillicons.dev/icons?i=telegram&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/Groq%20AI-F55036?style=flat-square&logo=groq&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/YouTube%20API-FF0000?style=flat-square&logo=youtube&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/Pexels%20API-05A081?style=flat-square&logo=pexels&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/WhatsApp%20API-25D366?style=flat-square&logo=whatsapp&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/Groq_AI-F55036?style=for-the-badge&logo=groq&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/YouTube_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/Pexels_API-05A081?style=for-the-badge&logo=pexels&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/WhatsApp_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
 </td>
 </tr>
 </table>
