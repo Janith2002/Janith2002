@@ -31,8 +31,10 @@ const janith = {
     "BEng (Hons) Software Engineering Top-Up - London Metropolitan University"
   ],
   roles    : ["Full-Stack Developer", "AI Systems Builder", "UI/UX Designer"],
-  stack    : ["PHP", "C#", "Python", "TypeScript", "Next.js", "ASP.NET"],
+  languages: ["PHP", "C#", "Python", "TypeScript", "JavaScript"],
+  frameworks: ["Next.js", "ASP.NET Core", "Flask", "FastAPI", "Bootstrap", "Tailwind"],
   databases: ["MySQL", "SQL Server", "SQLite", "Firebase"],
+  tools    : ["Docker", "Git", "GitHub Actions", "OpenCV", "FFmpeg", "n8n"],
   design   : ["Figma", "Adobe XD"],
   currently: "Building production-ready software & expanding into AI/Cybersecurity",
   openTo   : ["Collaboration", "Open Source", "Academic Projects"]
@@ -67,15 +69,16 @@ const janith = {
 <tr>
 <td align="center"><b>Tools</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd,ffmpeg&theme=dark"/>
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd&theme=dark"/>
+&nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white"/>
+&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/>
 </td>
 </tr>
 <tr>
 <td align="center"><b>Deploy</b></td>
 <td>
-<img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,cloudflare&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black"/>
-&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/>
+<img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,render&theme=dark"/>
+&nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=for-the-badge&logo=caddy&logoColor=white"/>
 </td>
 </tr>
 <tr>
@@ -108,6 +111,10 @@ const janith = {
 | [CVora](https://github.com/Janith2002/CVora) | CV/Resume management platform with admin panel | Next.js · TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Xera Studio](https://github.com/Janith2002/Xera-Studio) | Studio platform with Firebase & WhatsApp integration | Next.js · Firebase | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Smart Spend America](https://github.com/Janith2002/smartspendamerica) | Automated AI-driven YouTube finance channel | Python · Groq · FFmpeg | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [Sherov Edits Bot](https://github.com/Janith2002/sherov-edits-bot) | Telegram bot for video editing with watermark & premium system | Python · Telegram API | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [Sherov Flux](https://github.com/Janith2002/Sherov-Flux) | Python backend service with REST API & Docker deployment | Python · FastAPI · Render | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [HJ Stores IMS](https://github.com/Janith2002/HJ_Stores_IMS_Pro) | Inventory management system for retail stores | Python · Flask · SQLite | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [AniVerse](https://github.com/Janith2002/AniVerse) | Anime discovery platform deployed on Netlify | HTML · CSS · JavaScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 
 </div>
 
@@ -117,20 +124,26 @@ const janith = {
 
 <div align="center">
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Janith2002&theme=tokyonight" width="95%" alt="Profile Summary"/>
+<table>
+  <tr>
+    <td align="center">
+      <img src="https://img.shields.io/github/followers/Janith2002?style=for-the-badge&logo=github&label=Followers&color=00D9FF&labelColor=0d1117&logoColor=white"/>
+    </td>
+    <td align="center">
+      <img src="https://img.shields.io/github/stars/Janith2002?style=for-the-badge&logo=github&label=Total%20Stars&affiliations=OWNER&color=00D9FF&labelColor=0d1117&logoColor=white"/>
+    </td>
+    <td align="center">
+      <img src="https://img.shields.io/badge/Public%20Repos-20-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/>
+    </td>
+    <td align="center">
+      <img src="https://img.shields.io/badge/Status-Active-00C851?style=for-the-badge&logo=circle&logoColor=white&labelColor=0d1117"/>
+    </td>
+  </tr>
+</table>
 
 <br/>
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Janith2002&theme=tokyonight" height="160em"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Janith2002&theme=tokyonight" height="160em"/>
-&nbsp;
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Janith2002&theme=tokyonight" height="160em"/>
-
-
-<br/><br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Janith2002&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00D9FF&line=00D9FF&point=ffffff&area=true" width="95%" alt="Contribution Graph"/>
+<img src="https://ghchart.rshah.org/00D9FF/Janith2002" alt="Contribution Chart" width="95%"/>
 
 </div>
 
@@ -157,10 +170,6 @@ const janith = {
 <div align="center">
 
 [![GitHub](https://img.shields.io/badge/GitHub-Janith2002-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Janith2002)
-&nbsp;
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/janith-akalanka)
-&nbsp;
-[![Email](https://img.shields.io/badge/Email-Contact%20Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:janith@example.com)
 
 <br/>
 <sub>Open to collaboration, open-source contributions, and building impactful software solutions.</sub>
