@@ -221,7 +221,7 @@ const janith = {
       <img src="https://img.shields.io/github/stars/Janith2002?style=for-the-badge&logo=github&label=Total%20Stars&affiliations=OWNER&color=00D9FF&labelColor=0d1117&logoColor=white"/>
     </td>
     <td align="center">
-      <img src="https://img.shields.io/badge/Public%20Repos-20-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/>
+      <img src="https://img.shields.io/badge/Total%20Repos-20-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/>
     </td>
     <td align="center">
       <img src="https://img.shields.io/badge/Status-Active-00C851?style=for-the-badge&logo=circle&logoColor=white&labelColor=0d1117"/>
