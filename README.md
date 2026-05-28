@@ -116,9 +116,6 @@ const janith = {
 &nbsp;
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Janith2002&theme=tokyonight" height="160em"/>
 
-<br/><br/>
-
-<img src="https://github-readme-streak-stats.demolab.com/?user=Janith2002&theme=tokyonight&hide_border=true&background=0d1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF" alt="GitHub Streak"/>
 
 <br/><br/>
 
