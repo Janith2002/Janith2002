@@ -8,9 +8,11 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Janith2002&label=Profile+Views&color=0e75b6&style=flat-square" alt="Profile Views"/>
+<img src="https://komarev.com/ghpvc/?username=Janith2002&label=Profile+Views&color=0e75b6&style=flat-square"/>
 &nbsp;
-<a href="https://github.com/Janith2002?tab=followers"><img src="https://img.shields.io/github/followers/Janith2002?label=Followers&style=flat-square&color=00D9FF&labelColor=0d1117"/></a>
+<a href="https://github.com/Janith2002?tab=followers">
+  <img src="https://img.shields.io/github/followers/Janith2002?label=Followers&style=flat-square&color=00D9FF&labelColor=0d1117"/>
+</a>
 &nbsp;
 <img src="https://img.shields.io/badge/Open%20to%20Collaborate-Yes-00D9FF?style=flat-square&labelColor=0d1117"/>
 
@@ -43,40 +45,39 @@ const janith = {
 
 <div align="center">
 
-**Languages**
-
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![C#](https://img.shields.io/badge/C%23-239120?style=for-the-badge&logo=csharp&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-
-**Frameworks & Libraries**
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![ASP.NET](https://img.shields.io/badge/ASP.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
-
-**Databases & Cloud**
-
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![SQL Server](https://img.shields.io/badge/SQL%20Server-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
-
-**Tools & Design**
-
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Figma](https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white)
-![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=adobexd&logoColor=white)
-![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
-![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)
+<table>
+<tr>
+<td align="center" width="140"><b>Languages</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=php,cs,py,ts,js&theme=dark"/>
+</td>
+</tr>
+<tr>
+<td align="center"><b>Frameworks</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=nextjs,dotnet,bootstrap,tailwind,flask&theme=dark"/>
+</td>
+</tr>
+<tr>
+<td align="center"><b>Databases</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=mysql,sqlite,firebase&theme=dark"/>
+<img src="https://img.shields.io/badge/SQL%20Server-CC2927?style=flat-square&logo=microsoftsqlserver&logoColor=white"/>
+</td>
+</tr>
+<tr>
+<td align="center"><b>Tools</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=git,github,docker,vscode,figma,xd&theme=dark"/>
+</td>
+</tr>
+<tr>
+<td align="center"><b>Deploy</b></td>
+<td>
+<img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,render&theme=dark"/>
+</td>
+</tr>
+</table>
 
 </div>
 
@@ -105,27 +106,17 @@ const janith = {
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Janith2002&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00D9FF&icon_color=00D9FF&text_color=ffffff&cache_seconds=1800"/>
-&nbsp;&nbsp;
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Janith2002&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00D9FF&text_color=ffffff&cache_seconds=1800"/>
+<img height="170em" src="https://github-readme-stats.vercel.app/api?username=Janith2002&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=00D9FF&icon_color=00D9FF&text_color=ffffff&rank_icon=github&cache_seconds=86400&v=2"/>
+&nbsp;
+<img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Janith2002&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00D9FF&text_color=ffffff&cache_seconds=86400&v=2"/>
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com/?user=Janith2002&theme=tokyonight&hide_border=true&background=0d1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF" alt="GitHub Streak"/>
+<img src="https://github-readme-streak-stats.demolab.com/?user=Janith2002&theme=tokyonight&hide_border=true&background=0d1117&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF&v=2" alt="GitHub Streak"/>
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Janith2002&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00D9FF&line=00D9FF&point=ffffff&area=true" width="95%" alt="Contribution Graph"/>
-
-</div>
-
----
-
-<img src="https://img.shields.io/badge/-Achievements-0d1117?style=for-the-badge&logo=trophy&logoColor=00D9FF&labelColor=0d1117"/>
-
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=Janith2002&theme=tokyonight&no-frame=true&no-bg=true&row=1&column=6&margin-w=10" alt="Trophies"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Janith2002&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00D9FF&line=00D9FF&point=ffffff&area=true&v=2" width="95%" alt="Contribution Graph"/>
 
 </div>
 
