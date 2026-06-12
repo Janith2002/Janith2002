@@ -122,40 +122,40 @@ const janith = {
 <table>
 <tr>
 <td align="center" width="140"><b>Languages</b></td>
-<td><img src="https://skillicons.dev/icons?i=php,cs,py,ts,js,html,css&theme=dark"/></td>
+<td><!-- LANGS:START --><img src="https://skillicons.dev/icons?i=php,cs,py,ts,js,html,css&theme=dark"/><!-- LANGS:END --></td>
 </tr>
 <tr>
 <td align="center"><b>Frameworks</b></td>
-<td><img src="https://skillicons.dev/icons?i=nextjs,dotnet,bootstrap,tailwind,flask,fastapi,opencv&theme=dark"/></td>
+<td><!-- FRAMEWORKS:START --><img src="https://skillicons.dev/icons?i=nextjs,dotnet,bootstrap,tailwind,flask,fastapi,opencv&theme=dark"/><!-- FRAMEWORKS:END --></td>
 </tr>
 <tr>
 <td align="center"><b>Databases</b></td>
-<td><img src="https://skillicons.dev/icons?i=mysql,sqlite,firebase,mssql&theme=dark"/></td>
+<td><!-- DATABASES:START --><img src="https://skillicons.dev/icons?i=mysql,sqlite,firebase,mssql&theme=dark"/><!-- DATABASES:END --></td>
 </tr>
 <tr>
 <td align="center"><b>Tools</b></td>
-<td>
+<td><!-- TOOLS:START -->
 <img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd&theme=dark"/>
 &nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white"/>
 &nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/>
-</td>
+<!-- TOOLS:END --></td>
 </tr>
 <tr>
 <td align="center"><b>Deploy</b></td>
-<td>
+<td><!-- DEPLOY:START -->
 <img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,render&theme=dark"/>
 &nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=for-the-badge&logo=caddy&logoColor=white"/>
-</td>
+<!-- DEPLOY:END --></td>
 </tr>
 <tr>
 <td align="center"><b>APIs & AI</b></td>
-<td>
+<td><!-- APIS:START -->
 <img src="https://skillicons.dev/icons?i=telegram&theme=dark"/>
 &nbsp;<img src="https://img.shields.io/badge/Groq_AI-F55036?style=for-the-badge&logo=groq&logoColor=white"/>
 &nbsp;<img src="https://img.shields.io/badge/YouTube_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
 &nbsp;<img src="https://img.shields.io/badge/Pexels_API-05A081?style=for-the-badge&logo=pexels&logoColor=white"/>
 &nbsp;<img src="https://img.shields.io/badge/WhatsApp_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-</td>
+<!-- APIS:END --></td>
 </tr>
 </table>
 
@@ -173,7 +173,9 @@ const janith = {
 
 | Project | Description | Stack | Status |
 |:--------|:-----------|:------|:------:|
+<!-- PROJECTS-AI:START -->
 | [AI Smart Attendance](https://github.com/Janith2002/AI-Powered-Smart-School-Attendance-System) | Face recognition school attendance with analytics dashboard | PHP · Python · OpenCV · MySQL | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+<!-- PROJECTS-AI:END -->
 
 </div>
 
@@ -183,6 +185,7 @@ const janith = {
 
 | Project | Description | Stack | Status |
 |:--------|:-----------|:------|:------:|
+<!-- PROJECTS-WEB:START -->
 | [UniManage](https://github.com/Janith2002/Unimanage) | University management - students, courses & messaging | C# · ASP.NET · SQL Server | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [ISDN Sales System](https://github.com/Janith2002/isdn_sales_system) | E-commerce & delivery management with driver tracking | PHP · MySQL · Bootstrap | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Qrave Restaurant](https://github.com/Janith2002/qrave-restaurant) | QR-based table ordering with kitchen display | Next.js · TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
@@ -191,6 +194,7 @@ const janith = {
 | [Xera Studio](https://github.com/Janith2002/Xera-Studio) | Studio platform with Firebase & WhatsApp integration | Next.js · Firebase | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [HJ Stores IMS](https://github.com/Janith2002/HJ_Stores_IMS_Pro) | Inventory management system for retail stores | Python · Flask · SQLite | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [AniVerse](https://github.com/Janith2002/AniVerse) | Anime discovery platform deployed on Netlify | HTML · CSS · JavaScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+<!-- PROJECTS-WEB:END -->
 
 </div>
 
@@ -200,9 +204,11 @@ const janith = {
 
 | Project | Description | Stack | Status |
 |:--------|:-----------|:------|:------:|
+<!-- PROJECTS-AUTO:START -->
 | [Smart Spend America](https://github.com/Janith2002/smartspendamerica) | Fully automated AI-driven YouTube finance channel | Python · Groq · FFmpeg | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Sherov Edits Bot](https://github.com/Janith2002/sherov-edits-bot) | Telegram bot for video editing with watermark & premium system | Python · Telegram API | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Sherov Flux](https://github.com/Janith2002/Sherov-Flux) | Python backend REST API with Docker deployment on Render | Python · FastAPI · Docker | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+<!-- PROJECTS-AUTO:END -->
 
 </div>
 
