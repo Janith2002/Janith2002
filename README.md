@@ -50,34 +50,18 @@ const janith = {
 <img src="https://img.shields.io/badge/-Education-0d1117?style=for-the-badge&logo=mortarboard&logoColor=00D9FF&labelColor=0d1117"/>
 
 <div align="center">
-
 <table>
   <tr>
-    <td align="center" width="60">
-      <img src="https://skillicons.dev/icons?i=dotnet&theme=dark" width="40"/>
-    </td>
-    <td>
-      <b>BEng (Hons) Software Engineering - Top-Up</b><br/>
-      <sub>London Metropolitan University &nbsp;|&nbsp; 2024 - Present</sub>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/In%20Progress-00D9FF?style=flat-square&labelColor=0d1117"/>
-    </td>
+    <td align="center" width="60"><img src="https://skillicons.dev/icons?i=dotnet&theme=dark" width="40"/></td>
+    <td><b>BEng (Hons) Software Engineering - Top-Up</b><br/><sub>London Metropolitan University &nbsp;|&nbsp; 2024 - Present</sub></td>
+    <td align="center"><img src="https://img.shields.io/badge/In%20Progress-00D9FF?style=flat-square&labelColor=0d1117"/></td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="https://skillicons.dev/icons?i=github&theme=dark" width="40"/>
-    </td>
-    <td>
-      <b>HND in Software Engineering</b><br/>
-      <sub>Pearson BTEC @ ESOFT Metro Campus &nbsp;|&nbsp; Completed</sub>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Completed-00C851?style=flat-square&labelColor=0d1117"/>
-    </td>
+    <td align="center"><img src="https://skillicons.dev/icons?i=github&theme=dark" width="40"/></td>
+    <td><b>HND in Software Engineering</b><br/><sub>Pearson BTEC @ ESOFT Metro Campus &nbsp;|&nbsp; Completed</sub></td>
+    <td align="center"><img src="https://img.shields.io/badge/Completed-00C851?style=flat-square&labelColor=0d1117"/></td>
   </tr>
 </table>
-
 </div>
 
 ---
@@ -85,32 +69,14 @@ const janith = {
 <img src="https://img.shields.io/badge/-What%20I%20Build-0d1117?style=for-the-badge&logo=lightning&logoColor=00D9FF&labelColor=0d1117"/>
 
 <div align="center">
-
 <table>
   <tr>
-    <td align="center" width="200">
-      <img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48"/><br/>
-      <b>Web Applications</b><br/>
-      <sub>Full-stack platforms with<br/>modern frameworks & clean UI</sub>
-    </td>
-    <td align="center" width="200">
-      <img src="https://skillicons.dev/icons?i=opencv&theme=dark" width="48"/><br/>
-      <b>AI & Computer Vision</b><br/>
-      <sub>Face recognition systems,<br/>ML pipelines & smart automation</sub>
-    </td>
-    <td align="center" width="200">
-      <img src="https://skillicons.dev/icons?i=python&theme=dark" width="48"/><br/>
-      <b>Automation & Bots</b><br/>
-      <sub>Telegram bots, YouTube pipelines,<br/>AI content generation</sub>
-    </td>
-    <td align="center" width="200">
-      <img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48"/><br/>
-      <b>DevOps & Deployment</b><br/>
-      <sub>Docker, GitHub Actions,<br/>CI/CD & cloud deployment</sub>
-    </td>
+    <td align="center" width="200"><img src="https://skillicons.dev/icons?i=nextjs&theme=dark" width="48"/><br/><b>Web Applications</b><br/><sub>Full-stack platforms with<br/>modern frameworks & clean UI</sub></td>
+    <td align="center" width="200"><img src="https://skillicons.dev/icons?i=opencv&theme=dark" width="48"/><br/><b>AI & Computer Vision</b><br/><sub>Face recognition systems,<br/>ML pipelines & smart automation</sub></td>
+    <td align="center" width="200"><img src="https://skillicons.dev/icons?i=python&theme=dark" width="48"/><br/><b>Automation & Bots</b><br/><sub>Telegram bots, YouTube pipelines,<br/>AI content generation</sub></td>
+    <td align="center" width="200"><img src="https://skillicons.dev/icons?i=docker&theme=dark" width="48"/><br/><b>DevOps & Deployment</b><br/><sub>Docker, GitHub Actions,<br/>CI/CD & cloud deployment</sub></td>
   </tr>
 </table>
-
 </div>
 
 ---
@@ -118,7 +84,6 @@ const janith = {
 <img src="https://img.shields.io/badge/-Tech%20Stack-0d1117?style=for-the-badge&logo=stackshare&logoColor=00D9FF&labelColor=0d1117"/>
 
 <div align="center">
-
 <table>
 <tr>
 <td align="center" width="140"><b>Languages</b></td>
@@ -134,58 +99,42 @@ const janith = {
 </tr>
 <tr>
 <td align="center"><b>Tools</b></td>
-<td><!-- TOOLS:START -->
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/>
-<!-- TOOLS:END --></td>
+<td><!-- TOOLS:START --><img src="https://skillicons.dev/icons?i=git,github,githubactions,docker,vscode,figma,xd&theme=dark"/>&nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/><!-- TOOLS:END --></td>
 </tr>
 <tr>
 <td align="center"><b>Deploy</b></td>
-<td><!-- DEPLOY:START -->
-<img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,render&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=for-the-badge&logo=caddy&logoColor=white"/>
-<!-- DEPLOY:END --></td>
+<td><!-- DEPLOY:START --><img src="https://skillicons.dev/icons?i=netlify,vercel,firebase,render&theme=dark"/>&nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=for-the-badge&logo=caddy&logoColor=white"/><!-- DEPLOY:END --></td>
 </tr>
 <tr>
 <td align="center"><b>APIs & AI</b></td>
-<td><!-- APIS:START -->
-<img src="https://skillicons.dev/icons?i=telegram&theme=dark"/>
-&nbsp;<img src="https://img.shields.io/badge/Groq_AI-F55036?style=for-the-badge&logo=groq&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/YouTube_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/Pexels_API-05A081?style=for-the-badge&logo=pexels&logoColor=white"/>
-&nbsp;<img src="https://img.shields.io/badge/WhatsApp_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/>
-<!-- APIS:END --></td>
+<td><!-- APIS:START --><img src="https://skillicons.dev/icons?i=telegram&theme=dark"/>&nbsp;<img src="https://img.shields.io/badge/Groq_AI-F55036?style=for-the-badge&logo=groq&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/YouTube_API-FF0000?style=for-the-badge&logo=youtube&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Pexels_API-05A081?style=for-the-badge&logo=pexels&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/WhatsApp_API-25D366?style=for-the-badge&logo=whatsapp&logoColor=white"/><!-- APIS:END --></td>
 </tr>
 </table>
-
 </div>
 
 ---
 
 <img src="https://img.shields.io/badge/-Featured%20Projects-0d1117?style=for-the-badge&logo=githubactions&logoColor=00D9FF&labelColor=0d1117"/>
 
-<br/>
-
 **AI & Computer Vision**
 
+<!-- PROJECTS-AI:START -->
 <div align="center">
 
 | Project | Description | Stack | Status |
 |:--------|:-----------|:------|:------:|
-<!-- PROJECTS-AI:START -->
 | [AI Smart Attendance](https://github.com/Janith2002/AI-Powered-Smart-School-Attendance-System) | Face recognition school attendance with analytics dashboard | PHP · Python · OpenCV · MySQL | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
-<!-- PROJECTS-AI:END -->
 
 </div>
+<!-- PROJECTS-AI:END -->
 
 **Web Applications**
 
+<!-- PROJECTS-WEB:START -->
 <div align="center">
 
 | Project | Description | Stack | Status |
 |:--------|:-----------|:------|:------:|
-<!-- PROJECTS-WEB:START -->
 | [UniManage](https://github.com/Janith2002/Unimanage) | University management - students, courses & messaging | C# · ASP.NET · SQL Server | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [ISDN Sales System](https://github.com/Janith2002/isdn_sales_system) | E-commerce & delivery management with driver tracking | PHP · MySQL · Bootstrap | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Qrave Restaurant](https://github.com/Janith2002/qrave-restaurant) | QR-based table ordering with kitchen display | Next.js · TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
@@ -194,23 +143,23 @@ const janith = {
 | [Xera Studio](https://github.com/Janith2002/Xera-Studio) | Studio platform with Firebase & WhatsApp integration | Next.js · Firebase | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [HJ Stores IMS](https://github.com/Janith2002/HJ_Stores_IMS_Pro) | Inventory management system for retail stores | Python · Flask · SQLite | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [AniVerse](https://github.com/Janith2002/AniVerse) | Anime discovery platform deployed on Netlify | HTML · CSS · JavaScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
-<!-- PROJECTS-WEB:END -->
 
 </div>
+<!-- PROJECTS-WEB:END -->
 
 **Automation & AI Pipelines**
 
+<!-- PROJECTS-AUTO:START -->
 <div align="center">
 
 | Project | Description | Stack | Status |
 |:--------|:-----------|:------|:------:|
-<!-- PROJECTS-AUTO:START -->
 | [Smart Spend America](https://github.com/Janith2002/smartspendamerica) | Fully automated AI-driven YouTube finance channel | Python · Groq · FFmpeg | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Sherov Edits Bot](https://github.com/Janith2002/sherov-edits-bot) | Telegram bot for video editing with watermark & premium system | Python · Telegram API | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Sherov Flux](https://github.com/Janith2002/Sherov-Flux) | Python backend REST API with Docker deployment on Render | Python · FastAPI · Docker | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
-<!-- PROJECTS-AUTO:END -->
 
 </div>
+<!-- PROJECTS-AUTO:END -->
 
 ---
 
@@ -220,18 +169,10 @@ const janith = {
 
 <table>
   <tr>
-    <td align="center">
-      <img src="https://img.shields.io/github/followers/Janith2002?style=for-the-badge&logo=github&label=Followers&color=00D9FF&labelColor=0d1117&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/github/stars/Janith2002?style=for-the-badge&logo=github&label=Total%20Stars&affiliations=OWNER&color=00D9FF&labelColor=0d1117&logoColor=white"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Total%20Repos-20-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/>
-    </td>
-    <td align="center">
-      <img src="https://img.shields.io/badge/Status-Active-00C851?style=for-the-badge&logo=circle&logoColor=white&labelColor=0d1117"/>
-    </td>
+    <td align="center"><img src="https://img.shields.io/github/followers/Janith2002?style=for-the-badge&logo=github&label=Followers&color=00D9FF&labelColor=0d1117&logoColor=white"/></td>
+    <td align="center"><img src="https://img.shields.io/github/stars/Janith2002?style=for-the-badge&logo=github&label=Total%20Stars&affiliations=OWNER&color=00D9FF&labelColor=0d1117&logoColor=white"/></td>
+    <td align="center"><img src="https://img.shields.io/badge/Total%20Repos-20-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/></td>
+    <td align="center"><img src="https://img.shields.io/badge/Status-Active-00C851?style=for-the-badge&logo=circle&logoColor=white&labelColor=0d1117"/></td>
   </tr>
 </table>
 
