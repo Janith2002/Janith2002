@@ -19,117 +19,104 @@ def get_file(repo, path, branch="main"):
     except:
         return ""
 
-def replace_marker(content, marker, new_content):
+def replace_inline(content, marker, new_html):
+    """For tech stack markers that are INLINE inside <td> cells."""
     pattern = rf"<!-- {marker}:START -->.*?<!-- {marker}:END -->"
-    replacement = f"<!-- {marker}:START -->\n{new_content}\n<!-- {marker}:END -->"
+    replacement = f"<!-- {marker}:START -->{new_html}<!-- {marker}:END -->"
     return re.sub(pattern, replacement, content, flags=re.DOTALL)
 
-# ── Mappings ──────────────────────────────────────────────────────────────────
+def replace_block(content, marker, new_rows):
+    """For project markers that WRAP full div+table blocks."""
+    LIVE = "![Live](https://img.shields.io/badge/Live-00C851?style=flat-square)"
+    if not new_rows:
+        return content
+    pattern = rf"<!-- {marker}:START -->.*?<!-- {marker}:END -->"
+    # Find existing rows inside the marker
+    match = re.search(pattern, content, flags=re.DOTALL)
+    if not match:
+        return content
+    existing = match.group(0)
+    # Extract existing table rows (lines starting with |)
+    existing_rows = [l for l in existing.split('\n') if l.strip().startswith('|') and '---' not in l and 'Project' not in l]
+    all_rows = existing_rows + new_rows
+    rows_str = '\n'.join(all_rows)
+    new_block = f"""<!-- {marker}:START -->
+<div align="center">
 
+| Project | Description | Stack | Status |
+|:--------|:-----------|:------|:------:|
+{rows_str}
+
+</div>
+<!-- {marker}:END -->"""
+    return re.sub(pattern, new_block, content, flags=re.DOTALL)
+
+# ── Mappings ──────────────────────────────────────────────────────────────────
 LANG_ICONS = {
     "PHP":"php","C#":"cs","Python":"py","TypeScript":"ts","JavaScript":"js",
     "HTML":"html","CSS":"css","Rust":"rust","Go":"go","Java":"java",
-    "Kotlin":"kotlin","Swift":"swift","Ruby":"ruby","Dart":"dart","Lua":"lua",
-    "Shell":None,"Dockerfile":"docker","SCSS":"sass","Vue":"vuejs","Svelte":"svelte"
+    "Kotlin":"kotlin","Swift":"swift","Ruby":"ruby","Dart":"dart",
+    "Shell":None,"Dockerfile":"docker","Vue":"vuejs","Svelte":"svelte"
 }
-
 FRAMEWORK_ICONS = {
     "nextjs":["next"],"react":["react","react-dom"],"tailwind":["tailwindcss"],
     "bootstrap":["bootstrap"],"express":["express"],"vuejs":["vue"],
     "flask":["flask"],"fastapi":["fastapi"],"django":["django"],
-    "opencv":["opencv-python","opencv-python-headless","cv2"],
-    "dotnet":["Microsoft.AspNetCore","aspnetcore"],
-    "laravel":["laravel/framework"],"symfony":["symfony/framework"],
-    "pytorch":["torch"],"tensorflow":["tensorflow","tf"],
-    "nuxtjs":["nuxt"],"astro":["astro"],"svelte":["svelte"],
+    "opencv":["opencv-python","cv2"],"dotnet":["Microsoft.AspNetCore"],
+    "laravel":["laravel/framework"],"pytorch":["torch"],"tensorflow":["tensorflow"],
+    "nuxtjs":["nuxt"],"astro":["astro"],
 }
-
 DB_ICONS = {
-    "mysql":["mysql","mysqli","pymysql","mysql-connector-python","mysql2"],
-    "sqlite":["sqlite3","aiosqlite"],
-    "firebase":["firebase","firebase-admin","pyrebase"],
-    "mssql":["Microsoft.Data.SqlClient","System.Data.SqlClient","pyodbc","mssql"],
-    "postgres":["psycopg2","pg","postgres","asyncpg"],
-    "mongodb":["mongoose","mongodb","pymongo"],
-    "redis":["redis","ioredis","aioredis"],
-    "planetscale":["planetscale"],
-    "supabase":["supabase","@supabase/supabase-js"],
-    "cassandra":["cassandra-driver"],
+    "mysql":["mysql","mysqli","pymysql","mysql2"],"sqlite":["sqlite3"],
+    "firebase":["firebase","firebase-admin"],"mssql":["Microsoft.Data.SqlClient","pyodbc"],
+    "postgres":["psycopg2","pg","postgres"],"mongodb":["mongoose","pymongo"],
+    "redis":["redis","ioredis"],"supabase":["supabase","@supabase/supabase-js"],
 }
-
 TOOL_ICONS = {
-    "docker":["docker","docker-compose","Dockerfile"],
-    "kubernetes":["kubernetes","k8s"],
-    "githubactions":[".github/workflows"],
-    "postman":["postman"],
-    "jest":["jest","@jest/core"],
-    "vitest":["vitest"],
-    "webpack":["webpack"],
-    "vite":["vite"],
-    "babel":["@babel/core","babel-core"],
-    "eslint":["eslint"],
-    "prettier":["prettier"],
-    "graphql":["graphql","apollo","@apollo"],
-    "nginx":["nginx"],
+    "git":[],"github":[],"githubactions":[".github/workflows"],
+    "docker":["docker","Dockerfile"],"vscode":[],"figma":[],"xd":[],
+    "jest":["jest"],"vitest":["vitest"],"vite":["vite"],"nginx":["nginx"],
 }
-
 DEPLOY_ICONS = {
-    "netlify":["netlify","@netlify"],
-    "vercel":["vercel","@vercel"],
-    "firebase":["firebase"],
-    "render":["render.yaml","render"],
-    "heroku":["Procfile","heroku"],
-    "aws":["aws-sdk","boto3","@aws-sdk"],
-    "azure":["azure","@azure"],
-    "gcp":["google-cloud","@google-cloud"],
+    "netlify":["netlify"],"vercel":["vercel"],"firebase":["firebase"],
+    "render":["render.yaml"],"heroku":["Procfile"],
+    "aws":["aws-sdk","boto3"],"azure":["azure","@azure"],
     "cloudflare":["cloudflare","wrangler"],
-    "railway":["railway"],
 }
+ORDERED_FW  = ["nextjs","dotnet","bootstrap","tailwind","flask","fastapi","django","opencv","react","vuejs","pytorch","tensorflow","laravel","astro","svelte"]
+ORDERED_DB  = ["mysql","sqlite","firebase","mssql","postgres","mongodb","redis","supabase"]
+ORDERED_TOOL= ["git","github","githubactions","docker","vscode","figma","xd","jest","vitest","vite","nginx"]
+ORDERED_DEP = ["netlify","vercel","firebase","render","heroku","aws","azure","cloudflare"]
 
-API_BADGES = {
-    "telegram":   ("telegram",  "skillicon"),
-    "Groq_AI":    ("F55036",    "groq"),
-    "YouTube_API":("FF0000",    "youtube"),
-    "Pexels_API": ("05A081",    "pexels"),
-    "WhatsApp_API":("25D366",   "whatsapp"),
-    "OpenAI":     ("412991",    "openai"),
-    "Stripe":     ("635BFF",    "stripe"),
-    "Twilio":     ("F22F46",    "twilio"),
-}
+EXISTING = [
+    "AI-Powered-Smart-School-Attendance-System","isdn_sales_system","Unimanage",
+    "qrave-restaurant","Shopora-POS-project-plan","CVora","Xera-Studio","HJ_Stores_IMS_Pro",
+    "AniVerse","smartspendamerica","sherov-edits-bot","Sherov-Flux","Janith2002",
+    "privacy-policy","n8n-docker-caddy","my-portfolio","Python-FTP-Client",
+    "worldmonitor","janith-portfolio","sherov"
+]
 
-# Category rules for auto-classifying new repos
-def classify_repo(repo, languages):
-    name = repo["name"].lower()
-    desc = (repo["description"] or "").lower()
-    topics = repo.get("topics", [])
-    langs  = [l.lower() for l in languages.keys()]
-
-    ai_keywords   = ["ai","ml","vision","opencv","face","recognition","model","neural","predict","bot","telegram","automation"]
-    auto_keywords = ["bot","automation","scraper","pipeline","youtube","scheduler","cron","workflow","n8n","discord"]
-
-    if any(k in name or k in desc for k in auto_keywords) or "telegram" in langs or "bot" in topics:
-        return "automation"
-    if any(k in name or k in desc for k in ai_keywords) or "opencv" in langs:
-        return "ai"
+def classify(repo, langs):
+    n = repo["name"].lower(); d = (repo["description"] or "").lower()
+    auto_kw = ["bot","automation","scraper","pipeline","youtube","scheduler","workflow","n8n","discord"]
+    ai_kw   = ["ai","ml","vision","opencv","face","recognition","predict","neural"]
+    if any(k in n or k in d for k in auto_kw): return "auto"
+    if any(k in n or k in d for k in ai_kw):   return "ai"
     return "web"
 
-# ── Fetch repos ───────────────────────────────────────────────────────────────
+# ── Main ──────────────────────────────────────────────────────────────────────
 print("Fetching repos...")
 repos  = api(f"https://api.github.com/user/repos?per_page=100&type=all&sort=updated")
 total  = len(repos)
 public = [r for r in repos if not r["private"] and not r["fork"]]
-print(f"Total: {total} | Public non-fork: {len(public)}")
 
-# ── Aggregate languages ───────────────────────────────────────────────────────
 print("Fetching languages...")
 all_langs = {}
 for repo in public:
     try:
-        langs = api(f"https://api.github.com/repos/{USERNAME}/{repo['name']}/languages")
-        for lang, bytes_ in langs.items():
-            all_langs[lang] = all_langs.get(lang, 0) + bytes_
-    except:
-        pass
+        for lang, b in api(f"https://api.github.com/repos/{USERNAME}/{repo['name']}/languages").items():
+            all_langs[lang] = all_langs.get(lang, 0) + b
+    except: pass
 
 lang_icons = []
 for lang, _ in sorted(all_langs.items(), key=lambda x: -x[1]):
@@ -137,167 +124,87 @@ for lang, _ in sorted(all_langs.items(), key=lambda x: -x[1]):
     if icon and icon not in lang_icons:
         lang_icons.append(icon)
 
-print(f"Languages detected: {lang_icons}")
-
-# ── Detect frameworks, DBs, tools from repo files ────────────────────────────
-print("Detecting tech stack...")
-found_frameworks = set(["nextjs","dotnet","bootstrap","tailwind","flask","fastapi","opencv"])
-found_dbs        = set(["mysql","sqlite","firebase","mssql"])
-found_tools      = set(["git","github","githubactions","docker","vscode","figma","xd"])
-found_deploy     = set(["netlify","vercel","firebase","render"])
-found_apis       = set(["telegram","Groq_AI","YouTube_API","Pexels_API","WhatsApp_API"])
+print("Detecting frameworks...")
+found_fw   = set(["nextjs","dotnet","bootstrap","tailwind","flask","fastapi","opencv"])
+found_db   = set(["mysql","sqlite","firebase","mssql"])
+found_tool = set(["git","github","githubactions","docker","vscode","figma","xd"])
+found_dep  = set(["netlify","vercel","firebase","render"])
+found_apis = set(["telegram","Groq_AI","YouTube_API","Pexels_API","WhatsApp_API"])
 
 for repo in public:
     rname = repo["name"]
-    pkg   = get_file(rname, "package.json")
-    req   = get_file(rname, "requirements.txt")
-    csproj_content = ""
-    # Try to find .csproj
+    text  = (get_file(rname,"package.json") + get_file(rname,"requirements.txt")).lower()
     try:
-        tree_url = f"https://api.github.com/repos/{USERNAME}/{rname}/git/trees/main?recursive=1"
-        tree_req = urllib.request.Request(tree_url, headers=HDRS)
-        with urllib.request.urlopen(tree_req) as r:
-            tree = json.load(r)
-            for item in tree.get("tree", []):
-                if item["path"].endswith(".csproj"):
-                    csproj_content = get_file(rname, item["path"])
-                    break
-    except:
-        pass
+        tree = api(f"https://api.github.com/repos/{USERNAME}/{rname}/git/trees/main?recursive=1")
+        for item in tree.get("tree",[]):
+            if item["path"].endswith(".csproj"):
+                text += get_file(rname, item["path"]).lower()
+                break
+    except: pass
+    for icon, kws in FRAMEWORK_ICONS.items():
+        if any(k.lower() in text for k in kws): found_fw.add(icon)
+    for icon, kws in DB_ICONS.items():
+        if any(k.lower() in text for k in kws): found_db.add(icon)
+    for icon, kws in TOOL_ICONS.items():
+        if any(k.lower() in text for k in kws) or icon in ["git","github","vscode","figma","xd"]: found_tool.add(icon)
+    for icon, kws in DEPLOY_ICONS.items():
+        if any(k.lower() in text for k in kws): found_dep.add(icon)
+    if "openai" in text:  found_apis.add("OpenAI")
+    if "stripe"  in text: found_apis.add("Stripe")
 
-    combined = (pkg + req + csproj_content).lower()
-
-    for icon, keywords in FRAMEWORK_ICONS.items():
-        if any(kw.lower() in combined for kw in keywords):
-            found_frameworks.add(icon)
-
-    for icon, keywords in DB_ICONS.items():
-        if any(kw.lower() in combined for kw in keywords):
-            found_dbs.add(icon)
-
-    for icon, keywords in TOOL_ICONS.items():
-        if any(kw.lower() in combined for kw in keywords):
-            found_tools.add(icon)
-
-    for icon, keywords in DEPLOY_ICONS.items():
-        if any(kw.lower() in combined for kw in keywords):
-            found_deploy.add(icon)
-
-    # API detection
-    all_text = combined
-    if "openai" in all_text:     found_apis.add("OpenAI")
-    if "stripe" in all_text:     found_apis.add("Stripe")
-    if "twilio" in all_text:     found_apis.add("Twilio")
-
-print(f"Frameworks: {found_frameworks}")
-print(f"Databases:  {found_dbs}")
-print(f"Tools:      {found_tools}")
-print(f"Deploy:     {found_deploy}")
-print(f"APIs:       {found_apis}")
-
-# ── Build skillicon / badge HTML ──────────────────────────────────────────────
-ORDERED_FW   = ["nextjs","dotnet","bootstrap","tailwind","flask","fastapi","django","opencv","react","vuejs","astro","svelte","laravel","pytorch","tensorflow"]
-ORDERED_DB   = ["mysql","sqlite","firebase","mssql","postgres","mongodb","redis","supabase","planetscale"]
-ORDERED_TOOL = ["git","github","githubactions","docker","vscode","figma","xd","jest","vitest","webpack","vite","nginx","postman"]
-ORDERED_DEP  = ["netlify","vercel","firebase","render","heroku","aws","azure","gcp","cloudflare","railway"]
-
-def skillicons_img(icons, ordered=None):
+def skillicons(icons, ordered=None):
     if ordered:
         icons = [i for i in ordered if i in icons] + [i for i in icons if i not in ordered]
     return f'<img src="https://skillicons.dev/icons?i={",".join(icons)}&theme=dark"/>'
 
-def badge(label, color, logo):
-    return f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge&logo={logo}&logoColor=white"/>'
+lang_html = skillicons(lang_icons)
+fw_html   = skillicons(found_fw, ORDERED_FW)
+db_html   = skillicons(found_db, ORDERED_DB)
+tool_html = skillicons([t for t in ORDERED_TOOL if t in found_tool])
+tool_html += '&nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/>'
+dep_html  = skillicons([d for d in ORDERED_DEP if d in found_dep])
+dep_html += '&nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=for-the-badge&logo=caddy&logoColor=white"/>'
 
-lang_html      = skillicons_img(lang_icons)
-framework_html = skillicons_img(found_frameworks, ORDERED_FW)
-db_html        = skillicons_img(found_dbs, ORDERED_DB)
+api_parts = ['<img src="https://skillicons.dev/icons?i=telegram&theme=dark"/>']
+API_BADGES = {
+    "Groq_AI":("F55036","groq"),"YouTube_API":("FF0000","youtube"),
+    "Pexels_API":("05A081","pexels"),"WhatsApp_API":("25D366","whatsapp"),
+    "OpenAI":("412991","openai"),"Stripe":("635BFF","stripe"),
+}
+for key, (color, logo) in API_BADGES.items():
+    if key in found_apis:
+        api_parts.append(f'&nbsp;<img src="https://img.shields.io/badge/{key}-{color}?style=for-the-badge&logo={logo}&logoColor=white"/>')
+api_html = "".join(api_parts)
 
-tool_skillicons = [t for t in ORDERED_TOOL if t in found_tools]
-tool_html = skillicons_img(tool_skillicons)
-if "docker" in found_tools or "docker" not in tool_skillicons:
-    pass  # already included
-tool_html += '\n&nbsp;<img src="https://img.shields.io/badge/FFmpeg-007808?style=for-the-badge&logo=ffmpeg&logoColor=white"/>'
-tool_html += '\n&nbsp;<img src="https://img.shields.io/badge/n8n-EA4B71?style=for-the-badge&logo=n8n&logoColor=white"/>'
-
-deploy_skillicons = [d for d in ORDERED_DEP if d in found_deploy]
-deploy_html = skillicons_img(deploy_skillicons)
-deploy_html += '\n&nbsp;<img src="https://img.shields.io/badge/Caddy-00ADD8?style=for-the-badge&logo=caddy&logoColor=white"/>'
-
-api_parts = []
-for api_key in found_apis:
-    info = API_BADGES.get(api_key)
-    if not info: continue
-    color, logo = info
-    if color == "skillicon":
-        api_parts.append(f'<img src="https://skillicons.dev/icons?i={logo}&theme=dark"/>')
-    else:
-        label = api_key.replace("_", "_")
-        api_parts.append(f'<img src="https://img.shields.io/badge/{label}-{color}?style=for-the-badge&logo={logo}&logoColor=white"/>')
-api_html = "\n&nbsp;".join(api_parts)
-
-# ── Existing project names (to avoid duplicates) ─────────────────────────────
-EXISTING_PROJECTS = [
-    "AI-Powered-Smart-School-Attendance-System","isdn_sales_system","Unimanage",
-    "qrave-restaurant","Shopora-POS-project-plan","CVora","Xera-Studio",
-    "HJ_Stores_IMS_Pro","AniVerse","smartspendamerica","sherov-edits-bot",
-    "Sherov-Flux","Janith2002","privacy-policy","n8n-docker-caddy","my-portfolio",
-    "Python-FTP-Client","worldmonitor","janith-portfolio","sherov"
-]
-
-live_badge = "![Live](https://img.shields.io/badge/Live-00C851?style=flat-square)"
-
-new_ai_rows, new_web_rows, new_auto_rows = [], [], []
-
+LIVE = "![Live](https://img.shields.io/badge/Live-00C851?style=flat-square)"
+new_ai, new_web, new_auto = [], [], []
 for repo in public:
-    if repo["name"] in EXISTING_PROJECTS:
-        continue
-    try:
-        langs = api(f"https://api.github.com/repos/{USERNAME}/{repo['name']}/languages")
-    except:
-        langs = {}
+    if repo["name"] in EXISTING: continue
+    try: langs = api(f"https://api.github.com/repos/{USERNAME}/{repo['name']}/languages")
+    except: langs = {}
+    desc = (repo["description"] or "No description").replace("|","-")[:55]
+    lang = repo.get("language") or "Code"
+    row  = f"| [{repo['name']}]({repo['html_url']}) | {desc} | {lang} | {LIVE} |"
+    cat  = classify(repo, langs)
+    if cat=="ai": new_ai.append(row)
+    elif cat=="auto": new_auto.append(row)
+    else: new_web.append(row)
 
-    desc  = (repo["description"] or "No description").replace("|", "-")[:60]
-    lang  = repo.get("language") or "Code"
-    url   = repo["html_url"]
-    name  = repo["name"]
-    row   = f"| [{name}]({url}) | {desc} | {lang} | {live_badge} |"
-    cat   = classify_repo(repo, langs)
-    if cat == "ai":     new_ai_rows.append(row)
-    elif cat == "auto": new_auto_rows.append(row)
-    else:               new_web_rows.append(row)
-
-# ── Read and update README ────────────────────────────────────────────────────
-with open("README.md", "r", encoding="utf-8") as f:
+with open("README.md","r",encoding="utf-8") as f:
     content = f.read()
 
-# Update total repos badge
 content = re.sub(r"Total%20Repos-\d+-", f"Total%20Repos-{total}-", content)
+content = replace_inline(content, "LANGS",      lang_html)
+content = replace_inline(content, "FRAMEWORKS", fw_html)
+content = replace_inline(content, "DATABASES",  db_html)
+content = replace_inline(content, "TOOLS",      tool_html)
+content = replace_inline(content, "DEPLOY",     dep_html)
+content = replace_inline(content, "APIS",       api_html)
+content = replace_block(content, "PROJECTS-AI",   new_ai)
+content = replace_block(content, "PROJECTS-WEB",  new_web)
+content = replace_block(content, "PROJECTS-AUTO", new_auto)
 
-# Update tech stack sections
-content = replace_marker(content, "LANGS",      lang_html)
-content = replace_marker(content, "FRAMEWORKS", framework_html)
-content = replace_marker(content, "DATABASES",  db_html)
-content = replace_marker(content, "TOOLS",      tool_html)
-content = replace_marker(content, "DEPLOY",     deploy_html)
-content = replace_marker(content, "APIS",       api_html)
-
-# Append new projects if any
-def append_to_marker(content, marker, new_rows):
-    if not new_rows: return content
-    pattern = rf"(<!-- {marker}:START -->)(.*?)(<!-- {marker}:END -->)"
-    def replacer(m):
-        return m.group(1) + m.group(2).rstrip() + "\n" + "\n".join(new_rows) + "\n" + m.group(3)
-    return re.sub(pattern, replacer, content, flags=re.DOTALL)
-
-content = append_to_marker(content, "PROJECTS-AI",   new_ai_rows)
-content = append_to_marker(content, "PROJECTS-WEB",  new_web_rows)
-content = append_to_marker(content, "PROJECTS-AUTO", new_auto_rows)
-
-with open("README.md", "w", encoding="utf-8") as f:
+with open("README.md","w",encoding="utf-8") as f:
     f.write(content)
 
-print("README fully updated!")
-print(f"New AI projects:         {len(new_ai_rows)}")
-print(f"New Web projects:        {len(new_web_rows)}")
-print(f"New Automation projects: {len(new_auto_rows)}")
+print(f"Done! Total:{total} | New AI:{len(new_ai)} | New Web:{len(new_web)} | New Auto:{len(new_auto)}")
