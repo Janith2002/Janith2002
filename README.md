@@ -87,11 +87,11 @@ const janith = {
 <table>
 <tr>
 <td align="center" width="140"><b>Languages</b></td>
-<td><!-- LANGS:START --><img src="https://skillicons.dev/icons?i=php,cs,py,ts,js,html,css&theme=dark"/><!-- LANGS:END --></td>
+<td><!-- LANGS:START --><img src="https://skillicons.dev/icons?i=ts,html,cs,php,css,py,js,docker&theme=dark"/><!-- LANGS:END --></td>
 </tr>
 <tr>
 <td align="center"><b>Frameworks</b></td>
-<td><!-- FRAMEWORKS:START --><img src="https://skillicons.dev/icons?i=nextjs,dotnet,bootstrap,tailwind,flask,fastapi,opencv&theme=dark"/><!-- FRAMEWORKS:END --></td>
+<td><!-- FRAMEWORKS:START --><img src="https://skillicons.dev/icons?i=nextjs,dotnet,bootstrap,tailwind,flask,fastapi,opencv,react&theme=dark"/><!-- FRAMEWORKS:END --></td>
 </tr>
 <tr>
 <td align="center"><b>Databases</b></td>
@@ -124,6 +124,7 @@ const janith = {
 | Project | Description | Stack | Status |
 |:--------|:-----------|:------|:------:|
 | [AI Smart Attendance](https://github.com/Janith2002/AI-Powered-Smart-School-Attendance-System) | Face recognition school attendance with analytics dashboard | PHP · Python · OpenCV · MySQL | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [Type-Flow](https://github.com/Janith2002/Type-Flow) | A single-file, dependency-free typing trainer: two-hand | HTML | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 
 </div>
 <!-- PROJECTS-AI:END -->
@@ -143,6 +144,7 @@ const janith = {
 | [Xera Studio](https://github.com/Janith2002/Xera-Studio) | Studio platform with Firebase & WhatsApp integration | Next.js · Firebase | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [HJ Stores IMS](https://github.com/Janith2002/HJ_Stores_IMS_Pro) | Inventory management system for retail stores | Python · Flask · SQLite | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [AniVerse](https://github.com/Janith2002/AniVerse) | Anime discovery platform deployed on Netlify | HTML · CSS · JavaScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [Lapstream](https://github.com/Janith2002/Lapstream) | No description | TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 
 </div>
 <!-- PROJECTS-WEB:END -->
@@ -171,7 +173,7 @@ const janith = {
   <tr>
     <td align="center"><img src="https://img.shields.io/github/followers/Janith2002?style=for-the-badge&logo=github&label=Followers&color=00D9FF&labelColor=0d1117&logoColor=white"/></td>
     <td align="center"><img src="https://img.shields.io/github/stars/Janith2002?style=for-the-badge&logo=github&label=Total%20Stars&affiliations=OWNER&color=00D9FF&labelColor=0d1117&logoColor=white"/></td>
-    <td align="center"><img src="https://img.shields.io/badge/Total%20Repos-20-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/></td>
+    <td align="center"><img src="https://img.shields.io/badge/Total%20Repos-23-00D9FF?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117"/></td>
     <td align="center"><img src="https://img.shields.io/badge/Status-Active-00C851?style=for-the-badge&logo=circle&logoColor=white&labelColor=0d1117"/></td>
   </tr>
 </table>
