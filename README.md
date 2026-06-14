@@ -125,6 +125,7 @@ const janith = {
 |:--------|:-----------|:------|:------:|
 | [AI Smart Attendance](https://github.com/Janith2002/AI-Powered-Smart-School-Attendance-System) | Face recognition school attendance with analytics dashboard | PHP · Python · OpenCV · MySQL | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Type-Flow](https://github.com/Janith2002/Type-Flow) | A single-file, dependency-free typing trainer: two-hand | HTML | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [Type-Flow](https://github.com/Janith2002/Type-Flow) | A single-file, dependency-free typing trainer: two-hand | HTML | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 
 </div>
 <!-- PROJECTS-AI:END -->
@@ -144,6 +145,7 @@ const janith = {
 | [Xera Studio](https://github.com/Janith2002/Xera-Studio) | Studio platform with Firebase & WhatsApp integration | Next.js · Firebase | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [HJ Stores IMS](https://github.com/Janith2002/HJ_Stores_IMS_Pro) | Inventory management system for retail stores | Python · Flask · SQLite | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [AniVerse](https://github.com/Janith2002/AniVerse) | Anime discovery platform deployed on Netlify | HTML · CSS · JavaScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
+| [Lapstream](https://github.com/Janith2002/Lapstream) | No description | TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 | [Lapstream](https://github.com/Janith2002/Lapstream) | No description | TypeScript | ![Live](https://img.shields.io/badge/Live-00C851?style=flat-square) |
 
 </div>
